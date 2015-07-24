@@ -11,8 +11,13 @@ and open the template in the editor.
     </head>
     <body>
         <?php
+        session_start();
+        if (isset($_SESSION["logIn"]) && $_SESSION["logIn"] === "true") {
+            header("location:./mainpage.php");
+        }
         require './lib/Template.class.php';
         $tem = new Template();
+        $tem->assign("Info", "");
         $tem->display("./templates/startpage.tpl");
         ?>
     </body>
