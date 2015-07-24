@@ -1,0 +1,59 @@
+
+body{
+    min-width: 1000px;
+    overflow: scroll;
+    background-color: lightgray;
+}
+
+.btn{
+    
+}
+
+#t1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 6;
+}
+
+#t2{
+    background-color: darkgray;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-style: groove;
+}
+
+td{
+    width: 25%;
+    text-align: center;
+}
+
+#label{
+    background-color: darkgray;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-style: groove;
+}
+
+#ranking{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#table{
+    background-color: darkgray;
+}
+
+.feld{
+    background-color: white;
+}
+
+.menu{
+    width: 3cm;
+}

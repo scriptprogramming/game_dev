@@ -13,7 +13,7 @@ and open the template in the editor.
         <?php
         session_start();
         if (isset($_SESSION["logIn"]) && $_SESSION["logIn"] === "true") {
-            header("location:./mainpage.php");
+            header("location:./ranking.php");
         }
         require './lib/Template.class.php';
         $tem = new Template();

@@ -12,13 +12,13 @@ function loadTable() {
         for (var i = 0; i < data.length; i++) {
 
             htmlTable += "<tr>";
-            htmlTable += "<td align='center'>";
+            htmlTable += "<td align='center' class='feld'>";
             htmlTable += (i + 1);
             htmlTable += "</td>";
-            htmlTable += "<td align='center'>";
+            htmlTable += "<td align='center' class='feld'>";
             htmlTable += data[i]['name'];
             htmlTable += "</td>";
-            htmlTable += "<td align='center'>";
+            htmlTable += "<td align='center' class='feld'>";
             htmlTable += data[i]['score'];
             htmlTable += "</td>";
             htmlTable += "</tr>";
