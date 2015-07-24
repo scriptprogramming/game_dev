@@ -6,10 +6,9 @@ session_start();
 
 $tem = new Template();
 if (isset($_SESSION["logIn"]) && $_SESSION["logIn"] === "true") {
-    $temInner = new Template();
 
     $tem->assign('title', 'Ranking');
-    $tem->assign('content', $temInner->returnContent('templates/ranking.tpl'));
+    $tem->assign('content', $tem->returnContent('templates/ranking.tpl'));
 
     $tem->display('templates/mainTemplate.tpl');
 } else {

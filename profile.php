@@ -28,5 +28,3 @@ if (isset($_SESSION["logIn"]) && $_SESSION["logIn"] === "true") {
     $tem->assign("Info", "Bitte loggen Sie sich ein");
     $tem->display("./templates/startpage.tpl");
 }
-?>
-

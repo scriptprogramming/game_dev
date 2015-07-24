@@ -1,7 +1,5 @@
 
 body{
-    min-width: 1000px;
-    overflow: scroll;
     background-color: lightgray;
 }
 
@@ -56,4 +54,39 @@ td{
 
 .menu{
     width: 3cm;
+}
+
+#new{
+    position: absolute;
+    top: 90%;
+    left: 30%;
+
+}
+
+#question{
+    position: absolute;
+    top: 20%;
+    left: 40%;
+}
+#answer{
+    position: absolute;
+    top: 30%;
+    left: 40%;
+}
+#results{
+    position: absolute;
+    top: 70%;
+    left: 40%;
+}
+
+#info{
+    position: absolute;
+    top: 60%;
+    left: 40%;
+}
+
+#header{
+    position: absolute;
+    top: 40%;
+    left: 45%;
 }

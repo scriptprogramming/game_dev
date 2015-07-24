@@ -5,14 +5,17 @@
         <title>{$title}</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="./scripts/jquery-2.1.0.min.js"></script>
         <script type="text/javascript" src="./scripts/jquery-1.11.3.js"></script>
-        <script type="text/javascript" src="scripts/script.js"></script>
+        <script type="text/javascript" src="./scripts/script.js"></script>
+        <script type="text/javascript" src="./scripts/quiz.js"></script>
         <link rel="stylesheet" href="./styles/generalStyle.css">
+        <link type="text/css" rel="stylesheet" href="styles/style.css">
     </head>
     <body>
         <div>
             <table>
-                <td><form action="game.php">
+                <td><form action="quiz.php">
                         <input type="submit" value="Play" title="Spiel das Quiz" class="menu" />
                     </form></td>
                 <td><form action="profile.php">

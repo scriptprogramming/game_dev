@@ -17,7 +17,7 @@
             <form method="post" name="changePW" action="./changePW.php">
                 <table>
                     <tr>
-                        <td>Password: </td><td><input type="password" name="PWold" value="" /></td>
+                        <td>Password: </td><td><input type="password" name="PWord" value="" /></td>
                     </tr>
                     <tr>
                         <td>Neues Password:</td><td> <input type="password" name="PWfirst" value="" /></td>
@@ -34,6 +34,3 @@
         </td>
     </tr>
 </table>
-</body>
-
-
