@@ -3,5 +3,9 @@
 require './lib/Template.class.php';
 
 $tpl = new Template();
+$tplInner = new Template();
 
-$tpl->display('templates/ranking.tpl');
+$tpl->assign('title', 'Ranking');
+$tpl->assign('content', $tplInner->returnContent('templates/ranking.tpl'));
+
+$tpl->display('templates/mainTemplate.tpl');

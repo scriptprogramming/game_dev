@@ -22,4 +22,18 @@ class Template {
         }
     }
 
+    public function returnContent($filename) {
+        if (file_exists($filename)) {
+            $content = file_get_contents($filename);
+            if (!empty($this->arr)) {
+                foreach ($this->arr as $key => $value) {
+                    $content = str_replace('{$' . $key . '}', $value, $content);
+                }
+            }
+            return $content;
+        } else {
+            echo 'file not found';
+        }
+    }
+
 }
