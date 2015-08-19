@@ -2,10 +2,16 @@
 
 require './lib/Template.class.php';
 
-$tpl = new Template();
-$tplInner = new Template();
+session_start();
 
-$tpl->assign('title', 'Ranking');
-$tpl->assign('content', $tplInner->returnContent('templates/ranking.tpl'));
+$tem = new Template();
+if (isset($_SESSION["logIn"]) && $_SESSION["logIn"] === "true") {
 
-$tpl->display('templates/mainTemplate.tpl');
+    $tem->assign('title', 'Ranking');
+    $tem->assign('content', $tem->returnContent('templates/ranking.tpl'));
+
+    $tem->display('templates/mainTemplate.tpl');
+} else {
+    $tem->assign("Info", "Bitte loggen Sie sich ein");
+    $tem->display("./templates/startpage.tpl");
+}

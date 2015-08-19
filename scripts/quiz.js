@@ -21,10 +21,6 @@ function loadQuestion() {
 }
 
 
-
-
-
-
 $(document).ready(function ()
 {
 
@@ -32,9 +28,7 @@ $(document).ready(function ()
 
     $("#results").click(function () {
 
-        if (!$("input[name='q1']:checked").val()
-
-                ) {
+        if (!$("input[name='q1']:checked").val()) {
             alert("You're not done yet!");
         }
 
@@ -53,10 +47,6 @@ $(document).ready(function ()
                 window.location.href = "loose.php?count=" + count;
                 count = 0;
             }
-
-
         }
     });
-
 });
-
